@@ -14,15 +14,6 @@
 
 eval "$(starship init zsh)"
 
-# alias n="nnn"
-# function nnn () {
-#     command nnn "$@"
-
-#     if [ -f "$NNN_TMPFILE" ]; then
-#             . "$NNN_TMPFILE"
-#     fi
-# }
-
 source $HOME/.config/aliases.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
