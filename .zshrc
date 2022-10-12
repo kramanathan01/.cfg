@@ -1,6 +1,4 @@
-# Source zsh plugins
-# source $HOME/.config/.zsh-vi-mode/zsh-vi-mode.plugin.zsh
-
+# ZSH Auto Suggestion and Syntax Highlighting
 [ -d "/opt/homebrew/share/zsh-autosuggestions/" ] && source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh \
                                                   || source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -12,17 +10,14 @@
 
 
 
+# Set Prompt
 eval "$(starship init zsh)"
 
-source $HOME/.config/aliases.zsh
+# Configure Shell
+source $HOME/.config/zsh/aliases.zsh
+export EDITOR='code'
+export VEDITOR='code'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# Only load conda into path but dont actually use the bloat that comes with it
-# export PATH="$HOME/miniforge3/bin:/usr/local/anaconda3/bin:$PATH"
-# export NNN_TMPFILE="$HOME/.config/nnn/.lastd"
-export EDITOR='code'
-export VEDITOR='code'
-# export VISUAL="$HOME/.config/nnn/plugins/selnew.sh"
