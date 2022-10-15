@@ -14,6 +14,7 @@
 eval "$(starship init zsh)"
 
 # Configure Shell
+source $HOME/.config/zsh/utils.zsh
 source $HOME/.config/zsh/aliases.zsh
 export EDITOR='code'
 export VEDITOR='code'
